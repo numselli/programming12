@@ -20,7 +20,7 @@ public class Bmi {
 		
 		System.out.printf("your bmi is %.2f\n",BMI);
 		
-		System.out.println(determineCategory(BMI))
+		System.out.println(determineCategory(BMI));
 		
 		System.out.println("Want to continue with another calculation or quit\n1) Continue\n2) Quit");
 		int inputContinue = input.nextInt();
