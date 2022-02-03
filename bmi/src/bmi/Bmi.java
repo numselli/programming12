@@ -20,15 +20,7 @@ public class Bmi {
 		
 		System.out.printf("your bmi is %.2f\n",BMI);
 		
-		if (BMI <= 18.5) {
-			System.out.println("you are underweight");
-		}else if(BMI >= 18.5 && BMI <= 24.9) {
-			System.out.println("you are a healthy weight");
-		}else if(BMI >= 25 && BMI <= 29.9) {
-			System.out.println("you are overweight");
-		}else {
-			System.out.println("you are obese");
-		}
+		System.out.println(determineCategory(BMI))
 		
 		System.out.println("Want to continue with another calculation or quit\n1) Continue\n2) Quit");
 		int inputContinue = input.nextInt();
@@ -43,5 +35,17 @@ public class Bmi {
 	
 	public static double calulateBMI(double weight, double height) {
 		return weight / Math.pow(height, 2);
+	}
+
+	public static String determineCategory(double BMI) {
+		if (BMI <= 18.5) {
+			return "you are underweight";
+		}else if(BMI >= 18.5 && BMI <= 24.9) {
+			return "you are a healthy weight";
+		}else if(BMI >= 25 && BMI <= 29.9) {
+			return "you are overweight";
+		}else {
+			return "you are obese";
+		}
 	}
 }
