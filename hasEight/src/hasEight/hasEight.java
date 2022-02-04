@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class hasEight {
 	public static void main(String[] args) { 
 		Scanner input = new Scanner(System.in);
-		
+
 		mainLogic(input);
 	}
 	
@@ -20,8 +20,12 @@ public class hasEight {
 			System.exit(0);
 		}
 		
-		Boolean hasEight = checkHasEight(inputNum);
-		System.out.println(hasEight ? "Has 8" : "Does not have 8");
+		Boolean myHasEight = checkHasEight(inputNum);
+		System.out.println("my solution: "+(myHasEight ? "Has 8" : "Does not have 8"));
+		
+		Boolean teachHasEight = altCheckHasEight(inputNum);
+		System.out.println("taught solution: "+(teachHasEight ? "Has 8" : "Does not have 8"));
+
 		mainLogic(input);
 	}
 	
@@ -29,5 +33,25 @@ public class hasEight {
 		Pattern pattern = Pattern.compile("8");
 	    Matcher matcher = pattern.matcher(Integer.toString(inputNum));
 	    return matcher.find();
+	}
+	
+	// alternate has 8
+	public static Boolean altCheckHasEight(int inputNum) {
+		int inputNumLength = Integer.toString(inputNum).length();
+		
+		while (inputNumLength>1) {
+			inputNum = (inputNum % genRightSide(inputNum));
+			inputNumLength=Integer.toString(inputNum).length();
+		}
+
+		return inputNum==8;
+	}
+	
+	public static int genRightSide(int input) {
+		String numOfZeros ="1";
+		for (int i=0; i<=Integer.toString(input).length()-2; i++) {
+			numOfZeros+="0";
+		}
+		return Integer.parseInt(numOfZeros);
 	}
 }
