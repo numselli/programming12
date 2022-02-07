@@ -6,3 +6,4 @@
   - guessTheNumber: guess the number game
   - hasEight checks to see if a number has eight
 - Exercises:
+  - sinChecker: checks if a Social Insurance Number is valid
