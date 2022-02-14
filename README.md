@@ -8,4 +8,5 @@
 - Exercises:
   - sinChecker: checks if a Social Insurance Number is valid
   - craps: simulates a game of craps
-  - computerGuessingGame: computer trys to guess your secret number 
+  - computerGuessingGame: computer trys to guess your secret number
+  - pokerDice: simplified game of Poker Dice using only three dice
