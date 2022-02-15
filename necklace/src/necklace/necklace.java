@@ -8,14 +8,14 @@ public class necklace {
 
 		System.out.println("Enter the first starting number:");
 		int fristStart = input.nextInt();
-		if (fristStart >= 0 || fristStart < 9) {
+		if (fristStart <= 0 || fristStart > 9) {
 			System.out.println("First starting number must be a single digit positave number");
 			return;
 		}
 		
 		System.out.println("Enter the second starting number");
 		int secondStart = input.nextInt();
-		if (secondStart >= 0 || secondStart < 9) {
+		if (secondStart <= 0 || secondStart > 9) {
 			System.out.println("Second starting number must be a single digit positave number");
 			return;
 		}
