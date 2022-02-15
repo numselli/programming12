@@ -19,9 +19,10 @@ public class computerGuessingGame {
 		
 		int guesses = 1;
 		boolean correctGuess = false;
+		int leastRandNumber = 1;
 		
 		while (!correctGuess) {
-			int halfNum = (maxRandNumber+1)/2;
+			int halfNum = (leastRandNumber+maxRandNumber)/2;
 
 			System.out.printf("Is your number %d?\n1) correct\n2) too high\n3) too low\n\n", halfNum);
 			int userNuminput = input.nextInt();
@@ -36,8 +37,8 @@ public class computerGuessingGame {
 					guesses++;
 				break;
 				case 3:
+					leastRandNumber = halfNum+1;
 					guesses++;
-					maxRandNumber = halfNum+1;
 				break;
 			}	
 		}	
