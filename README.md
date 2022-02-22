@@ -6,6 +6,7 @@
   - guessTheNumber: guess the number game
   - hasEight checks to see if a number has eight
   - rectangle: a class to get the area and primitor of a rectangle
+  - circle: get the area and circumferenc of a cicle
 - Exercises:
   - sinChecker: checks if a Social Insurance Number is valid
   - craps: simulates a game of craps
