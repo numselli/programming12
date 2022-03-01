@@ -2,27 +2,24 @@ package choHan;
 
 import java.util.Random;
 
-public class dealer {	
-	private int diceOne = 0;
-	private int diceTwo = 0;
+public class dealer {
+	private int total = 0;
 	
 	public dealer () {
 	}
 	
 	public void rollDice() {
 		Random rand = new Random(); 
-		diceOne = rand.nextInt(6) + 1;
-		diceTwo = rand.nextInt(6) + 1;
+		this.total = (rand.nextInt(6) + 1) + rand.nextInt(6) + 1;
 	}
 	
 	public int getDie () {
-		return diceOne + diceTwo;
+		return this.total;
 	}
 	
 	public String getChoOrHan() { 
 		rollDice();
-		int total = diceOne + diceTwo;
 		
-		return total % 2 == 0 ? "cho" : "han";
+		return this.total % 2 == 0 ? "cho" : "han";
 	}
 }
