@@ -16,7 +16,7 @@ public class game {
 			String playerOneGuess = JOptionPane.showInputDialog("Player one guess. (Cho, Han)");
 			String playerTwoGuess = JOptionPane.showInputDialog("Player two guess. (Cho, Han)");
 			JOptionPane.showMessageDialog(null, String.format("Dice rolled %d, (%s)", dealer.getDie(), diceresult)); 
-			playerOne.addPoint();
+
 			if (playerOneGuess.equalsIgnoreCase(diceresult)) playerOne.addPoint();			
 			else if (playerTwoGuess.equalsIgnoreCase(diceresult)) playerTwo.addPoint();
 
@@ -30,5 +30,6 @@ public class game {
 		int secondPoints = playerOne.getPoints() < playerTwo.getPoints() ? playerOne.getPoints() : playerTwo.getPoints();
 
 		JOptionPane.showMessageDialog(null, String.format("Game ended after %d rounds %s won with %d points. %s came in second with %d points", round, winer, winnerPoints, second, secondPoints)); 
+		System.exit(0);
 	}
 }
