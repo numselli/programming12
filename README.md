@@ -9,6 +9,7 @@
   - circle: get the area and circumferenc of a cicle
   - cellPhone: a class describing a cell phone
   - dice: a class to roll a dice with customizeable sides
+  - employee: a class to represent an employee
 - Exercises:
   - sinChecker: checks if a Social Insurance Number is valid
   - craps: simulates a game of craps
