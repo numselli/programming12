@@ -13,7 +13,7 @@ public class date {
 
     // add
     public void increaseDay(int amount){
-        calObj.add(7, amount);
+        calObj.add(5, amount);
     }
     public void increaseMonth(int amount){
         calObj.add(2, amount);
