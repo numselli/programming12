@@ -18,3 +18,4 @@
   - pokerDice: simplified game of Poker Dice using only three dice
   - necklace: starting two numbers are 1 and 8, twelve steps are required to close the necklace: 1 8 9 7 6 3 9 2 1 3 4 7 1 8.
   - heater: a class to represent a heater. allows for increseing and decresing temperature
+  - vehicle: a class to represent a car on a road trip
