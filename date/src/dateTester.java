@@ -46,7 +46,7 @@ public class dateTester {
                     System.out.println("Enter amount of years to add");
                     int yearsToAdd = input.nextInt();
                     dateClass.increaseYear(yearsToAdd);
-                    System.out.printf("the date is now %s", dateClass.getDate());
+                    System.out.printf("the date is now %s\n", dateClass.getDate());
                 }
                 break;
                 case 6: {
