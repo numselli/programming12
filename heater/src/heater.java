@@ -1,13 +1,16 @@
 public class heater {
     // Fields
-    private double minTemp = 0;
-    private double maxTemp = 100;
-    private double increment = 0.5;
-    private double temperature = 69.0;
+    private double minTemp;
+    private double maxTemp;
+    private double increment;
+    private double temperature;
 
     // Constructors
     heater(){
-        
+        maxTemp = 0;
+        minTemp = 100;
+        increment = 0.5;
+        temperature = 69.0;
     }
     heater(double minTemp, double maxTemp, double increment, double temperature){
         this.minTemp = minTemp;
@@ -26,7 +29,7 @@ public class heater {
     }
     public void decreaseTemp(){
         if ((temperature-increment)<minTemp){
-            System.out.printlln("this is as cold as it gets");
+            System.out.println("this is as cold as it gets");
             return;
         }
         temperature -= increment;
