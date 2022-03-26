@@ -17,7 +17,7 @@ public class vehicle {
     }
 
     public double getMaxDistance(){
-        return (fuelCapacity / (fuelEconomy * 100));
+        return (fuelLevel / (fuelEconomy * 100));
     }
     public double getfuelLevel(){
         return fuelLevel;
