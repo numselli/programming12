@@ -22,3 +22,4 @@
   - date: a class for adding and subtracting dates
   - account: a class to represent a bank account
   - gotchiGame: a pokemon like game
+  - wordle: a text based wordle clone
