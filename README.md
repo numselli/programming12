@@ -23,3 +23,4 @@
   - account: a class to represent a bank account
   - gotchiGame: a pokemon like game
   - wordle: a text based wordle clone
+  - rainfallStatistics: get the rain fall for all months and get the avrage
