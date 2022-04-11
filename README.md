@@ -24,3 +24,4 @@
   - gotchiGame: a pokemon like game
   - wordle: a text based wordle clone
   - rainfallStatistics: get the rain fall for all months and get the avrage
+  - wheelOfNames: pick random names from a list
