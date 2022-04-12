@@ -25,3 +25,5 @@
   - wordle: a text based wordle clone
   - rainfallStatistics: get the rain fall for all months and get the avrage
   - wheelOfNames: pick random names from a list
+  - lockers: simulate students opining and closing lockers
+  - analysis: A program that analyzes a set of numbers can be very useful.
