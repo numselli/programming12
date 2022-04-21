@@ -27,3 +27,4 @@
   - wheelOfNames: pick random names from a list
   - lockers: simulate students opining and closing lockers
   - analysis: A program that analyzes a set of numbers can be very useful.
+  - driversLicence: a simple test program
