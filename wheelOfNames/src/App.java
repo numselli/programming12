@@ -17,11 +17,15 @@ public class App {
             System.out.println("invalid amount using defualt of 1");
         }
 
-        int index = 1;
+        int index = 0;
         while(index<numOfNames){
-            int randIndex = randomObj.nextInt(inputNameList.length-1);
-            System.out.println(inputNameList[randIndex]);
-            inputNameList = removeElement(inputNameList, randIndex);
+            if (inputNameList.length==1){
+                System.out.println(inputNameList[0]);
+            }else{
+                int randIndex = randomObj.nextInt(inputNameList.length-1);
+                System.out.println(inputNameList[randIndex]);
+                inputNameList = removeElement(inputNameList, randIndex);
+            }
             index++;
         }
     }
