@@ -1,0 +1,61 @@
+Exercise 7 - Matching Game:
+Create a matching game on a 4x4 grid. 
+
+Steps: 
+
+Create a 4 x 4 array 
+Fill the array with pairs 
+Shuffle the array (ie. shuffle the deck) 
+Display the blank grid 
+Prompt the user to choose 2 squares 
+Check if squares are valid - within range of array 
+Check squares have not already been chosen 
+Check if squares match 
+Display grid showing cards that have been matched 
+Switch players 
+Repeat 
+
+Note: don't allow the user to choose a card that has already been matched 
+
+
+
+Exercise 8 – Penny Pitch 
+The Penny Pitch game is popular in amusement parks. Pennies are tossed onto a board that has certain areas marked with different prizes. For example: 
+
+PUZZLE |        | POSTER |        | DOLL
+       | POSTER |        |  DOLL  | BALL
+       | PUZZLE |  GAME  |        |           
+PUZZLE |  BALL  |        | POSTER | POSTER
+DOLL   |  GAME  |        |        | BALL
+
+The prizes available on this board are puzzle, game, ball, poster, and doll. At the end of the game, if all of the squares that say BALL are covered by a penny, the player gets the ball. This is also true for the other prizes. The board is made up of 25 squares (5 x 5). Each prize appears on three randomly chosen squares so that 15 squares contain prizes.   
+
+Create a PennyPitch application that displays a Penny Pitch board (use [ and ] to indicate squares) with prizes randomly placed and then simulates ten pennies being randomly pitched onto the board. After the pennies have been pitched, the application should display a message indicating which prizes have been won, it any. 
+
+
+
+
+Exercise 9: Mini Battleship:
+Build a battleship game using a 2D array.  
+Build a 5 x 5 grid 
+Have the ability to place a ship anywhere on the grid (start with two ships) 
+Prompt the user to guess the location 
+Create a 2 player version either Player vs Player or Player vs Computer 
+
+Extension: 
+Create a 10 x 10 grid 
+Place more than 1 ship 
+Prevent people from placing the ship off the grid (or on top of another ship) 
+
+Rough Algorithm: 
+Create 2D Array - 10x10 or 5x5 
+Initialize the array 
+Print the array 
+Place ship(s) - 5 ships (5 spaces to 2 spaces) - 2 ships minimum (3 spaces) 
+Check for valid ship location - stay on the grid, not crossing another ship 
+Computer or Player2 place their ships 
+
+Play game 
+Prompt for row and column 
+Check for hit 
+Computer or Player 2 turn 
