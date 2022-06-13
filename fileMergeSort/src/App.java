@@ -13,8 +13,8 @@ public class App {
         boolean eof1 = readOne.hasNextInt();
         boolean eof2 = readTwo.hasNextInt();
 
-        int value1 = eof1 ? readOne.nextInt() : -1; // -1 just to give it an initial value
-        int value2 = eof2 ?  readTwo.nextInt() : -1;
+        int value1 = readOne.nextInt();
+        int value2 = readTwo.nextInt();
         
         while (eof1 || eof2){
             if (eof1 && eof2){
@@ -31,14 +31,16 @@ public class App {
                     value2 = eof2 ? readTwo.nextInt() : value2;
                 }
             }else{
-                if(readOne.hasNextInt()) {
-                    value1 = readOne.nextInt();
-                    outputFile.println(value1);
+                if(eof1) {
                     System.out.println(value1);
-                }else if(readTwo.hasNextInt()) {
-                    value2 = readTwo.nextInt();
-                    outputFile.println(value2);
+                    outputFile.println(value1);
+                    eof1 = readOne.hasNextInt();
+                    value1 = eof1 ? readOne.nextInt() : value1;
+                }else if(eof2) {
                     System.out.println(value2);
+                    outputFile.println(value2);
+                    eof2 = readTwo.hasNextInt();
+                    value2 = eof2 ? readTwo.nextInt() : value2;
                 }else{
                     break;
                 }
